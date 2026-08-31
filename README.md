@@ -171,9 +171,38 @@ npm run fix    # 자동 수정
 
 ---
 
+## 스크린샷
+
+> 아래 3장은 **원본 `toodom02/AroundTheWorld` 저장소**에서 가져온 영문 UI 화면입니다.
+> 원작자의 자산을 그대로 보존하기 위해 수정하지 않았으며, **한국어 UI로 실제로 동작하는 모습은 아래 [라이브 데모](#라이브-데모)** 에서 직접 확인하세요.
+> 시작 메뉴, 점수 표시, 게임 오버 화면, 음악 토글, 키 안내 등 모든 사용자 노출 텍스트가 한글로 표시됩니다.
+
+### 원본 화면 (참고용)
+
+![메인 메뉴](./screenshots/mainmenu.jpg)
+
+![인게임](./screenshots/game.jpg)
+
+![게임 오버](./screenshots/gameover.jpg)
+
+### 한국어판에서 달라지는 부분
+
+- 메인 메뉴: `Around The World` → `어라운드 더 월드`, `Loading...` → `불러오는 중...`, `Start` → `시작`
+- 게임 오버: `Game Over` → `게임 오버`, `Score:` → `점수:`, `Restart` → `다시 시작`
+- 인게임 좌상단: `Score:` → `점수:`
+- 우하단 음악 버튼: `Mute music` / `Unmute music` → `배경음악 끄기` / `배경음악 켜기` (aria-label / title 동기화)
+- 푸터: `GitHub` → `GitHub 저장소`
+- 자바스크립트 비활성 안내: `You need to enable JavaScript...` → `이 게임을 실행하려면 JavaScript를 활성화해야 합니다.`
+
+> **원작자 크레딧**: 스크린샷 3장은 원본 저장소([toodom02/AroundTheWorld](https://github.com/toodom02/AroundTheWorld))의 자산으로, 원작자의 라이선스 정책을 따릅니다.
+
+---
+
 ## 라이브 데모
 
 이 저장소는 GitHub Pages로 자동 배포되도록 구성되어 있습니다. 최신 라이브 데모 URL은 저장소 상단의 `About` 영역 또는 `Pages` 설정에서 확인하세요.
+
+➡️ **https://sigco3111.github.io/AroundTheWorld/**
 
 ---
 
