@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <title>어라운드 더 월드 - 행성 위를 누비는 3D 게임</title>
+        <meta name="description" content="three.js와 cannon-es 물리 엔진으로 만든 WebGL 기반 3D 자바스크립트 게임. 작은 행성에서 떨어지는 운석을 피하고 코인을 모으세요.">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./static/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png">
+        <link rel="manifest" href="./static/site.webmanifest">
+        <link rel="mask-icon" href="./static/safari-pinned-tab.svg" color="#002147">
+        <link rel="shortcut icon" href="./static/favicon.ico">
+        <meta name="msapplication-TileColor" content="#002147">
+        <meta name="msapplication-config" content="./static/browserconfig.xml">
+        <meta name="theme-color" content="#002147">
+        
+        <link rel="stylesheet" href="./main.css" type="text/css">        
+      </head>
+
+    <body>
+        <noscript>이 게임을 실행하려면 JavaScript를 활성화해야 합니다.</noscript>
+
+        <div id="loading-overlay"></div>
+
+        <div id="joystick"></div>
+
+        <div class="menu" id="menu">
+            <h1 id="title">어라운드 더 월드</h1>
+            <div class="start-button" id="start-button" tabindex=0>불러오는 중...</div>
+        </div>
+
+        <div class="menu" id="gameover">
+            <h1>게임 오버</h1>
+            <div id="gameover-score-div">
+                점수: <p id="gameover-score">0</p>
+            </div>
+            <div class="start-button loaded" id="restart-button" tabindex=0>다시 시작</div>
+        </div>
+
+        <div id="scorediv">
+            점수: <p id="score">0</p>
+        </div>
+
+        <div class="footer">
+            <a href="https://github.com/toodom02/AroundTheWorld" target="_blank">GitHub 저장소</a>
+        </div>
+
+        <div id="music-control" class="unmute" tabindex="0" role="button" aria-label="배경음악 끄기" title="배경음악 끄기">
+            <audio id="audio-music" preload="auto" loop>
+                <source src="./resources/background.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="audio-coin" preload="auto">
+                <source src="./resources/coin.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    <script defer src="main.js"></script></body>
+
+</html>
