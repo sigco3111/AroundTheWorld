@@ -44,7 +44,7 @@ export class Planet {
 
     const shape = cannonShapeResult?.shape;
     if (!shape) {
-      throw new Error('Failed to create cannon shape from planet model.');
+      throw new Error('행성 모델로부터 cannon 형태를 생성하지 못했습니다.');
     }
 
     this._planetBody = new CANNON.Body({

@@ -41,14 +41,14 @@ export class Menu {
     this._musicControl.onclick = () => {
       const muted = this._params.audio.toggleMute();
       this._musicControl.classList.toggle('mute', muted);
-      this._musicControl.setAttribute('aria-label', muted ? 'Unmute music' : 'Mute music');
-      this._musicControl.setAttribute('title', muted ? 'Unmute music' : 'Mute music');
+      this._musicControl.setAttribute('aria-label', muted ? '배경음악 켜기' : '배경음악 끄기');
+      this._musicControl.setAttribute('title', muted ? '배경음악 켜기' : '배경음악 끄기');
     }
   }
 
   EnableStartMenu() {
     this._overlay.classList.add('fade-out');
-    this._startButton.innerHTML = 'Start';
+    this._startButton.innerHTML = '시작';
     this._startButton.classList.add('loaded');
     this._startButton.onclick = () => {
       this._params.audio.unlock();

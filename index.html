@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
       
-        <title>Around The World</title>
-        <meta name="description" content="A 3D JavaScript game built with WebGL using the three.js library, and the cannon-es physics engine.">
+        <title>어라운드 더 월드 - 행성 위를 누비는 3D 게임</title>
+        <meta name="description" content="three.js와 cannon-es 물리 엔진으로 만든 WebGL 기반 3D 자바스크립트 게임. 작은 행성에서 떨어지는 운석을 피하고 코인을 모으세요.">
 
         <link rel="apple-touch-icon" sizes="180x180" href="./static/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png">
@@ -22,34 +22,34 @@
       </head>
 
     <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <noscript>이 게임을 실행하려면 JavaScript를 활성화해야 합니다.</noscript>
 
         <div id="loading-overlay"></div>
 
         <div id="joystick"></div>
 
         <div class="menu" id="menu">
-            <h1 id="title">Around The World</h1>
-            <div class="start-button" id="start-button" tabindex=0>Loading...</div>
+            <h1 id="title">어라운드 더 월드</h1>
+            <div class="start-button" id="start-button" tabindex=0>불러오는 중...</div>
         </div>
 
         <div class="menu" id="gameover">
-            <h1>Game Over</h1>
+            <h1>게임 오버</h1>
             <div id="gameover-score-div">
-                Score: <p id="gameover-score">0</p>
+                점수: <p id="gameover-score">0</p>
             </div>
-            <div class="start-button loaded" id="restart-button" tabindex=0>Restart</div>
+            <div class="start-button loaded" id="restart-button" tabindex=0>다시 시작</div>
         </div>
 
         <div id="scorediv">
-            Score: <p id="score">0</p>
+            점수: <p id="score">0</p>
         </div>
 
         <div class="footer">
-            <a href="https://github.com/toodom02/AroundTheWorld" target="_blank">GitHub</a>
+            <a href="https://github.com/toodom02/AroundTheWorld" target="_blank">GitHub 저장소</a>
         </div>
 
-        <div id="music-control" class="unmute" tabindex="0" role="button" aria-label="Mute music" title="Mute music">
+        <div id="music-control" class="unmute" tabindex="0" role="button" aria-label="배경음악 끄기" title="배경음악 끄기">
             <audio id="audio-music" preload="auto" loop>
                 <source src="./resources/background.mp3" type="audio/mpeg">
             </audio>

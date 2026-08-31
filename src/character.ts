@@ -112,12 +112,12 @@ export class CharacterController {
           path,
           (model) => resolve(model as T),
           undefined,
-          (error) => reject(new Error(`Failed to load ${path}: ${error}`))
+          (error) => reject(new Error(`${path} 로딩 실패: ${error}`))
         );
       }),
       new Promise<T>((_, reject) =>
         setTimeout(
-          () => reject(new Error(`Loading ${path} timed out after ${timeout}ms`)),
+          () => reject(new Error(`${path} 로딩이 ${timeout}ms 안에 끝나지 않았습니다.`)),
           timeout
         )
       ),
@@ -182,7 +182,7 @@ export class CharacterController {
           const anim = await this._loadFBXWithTimeout<THREE.Group>(loader, `${name}.fbx`, 30000);
           const clip = anim.animations[0];
           if (!clip) {
-            reject(new Error(`No animation clip found in ${name}.fbx`));
+            reject(new Error(`${name}.fbx 안에 애니메이션 클립이 없습니다.`));
             return;
           }
           this._animations[name] = {

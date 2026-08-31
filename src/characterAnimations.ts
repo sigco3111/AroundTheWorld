@@ -41,7 +41,7 @@ export class CharacterFSM {
 
     const StateConstructor = this._states.get(name);
     if (!StateConstructor) {
-      console.error(`State "${name}" not found in state machine`);
+      console.error(`상태 머신에서 "${name}" 상태를 찾을 수 없습니다.`);
       return;
     }
 

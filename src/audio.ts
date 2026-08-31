@@ -54,7 +54,7 @@ export class AudioManager {
     element.addEventListener('ended', () => this._activeEffects.delete(element), { once: true });
     void element.play().catch(error => {
       this._activeEffects.delete(element);
-      console.warn(`Unable to play sound "${name}".`, error);
+      console.warn(`"${name}" 효과음을 재생할 수 없습니다.`, error);
     });
   }
 
@@ -67,7 +67,7 @@ export class AudioManager {
     music.muted = this._muted;
     if (!this._muted) {
       void music.play().catch(error => {
-        console.warn('Unable to play background music.', error);
+        console.warn('배경음악을 재생할 수 없습니다.', error);
       });
     }
   }
@@ -101,7 +101,7 @@ export class AudioManager {
       sound.element.muted = this._muted;
       if (!this._muted && sound.loop && sound.element.paused) {
         void sound.element.play().catch(error => {
-          console.warn('Unable to resume background music.', error);
+          console.warn('배경음악을 다시 재생할 수 없습니다.', error);
         });
       }
     });

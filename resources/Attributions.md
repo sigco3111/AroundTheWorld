@@ -1,13 +1,25 @@
-Character model & animations from Mixamo
+# 외부 리소스 출처
 
-Planet (https://poly.pizza/m/B7xd3SZq0z) by Quaternius 
-Planet (used as meteor) (https://poly.pizza/m/18Uxrb2dIc) by Quaternius
-Coin (https://poly.pizza/m/7IrL01B97W) by Quaternius
+이 게임은 아래 출처의 자료를 사용합니다.
 
-Sound Effect by <a href="https://pixabay.com/users/freesound_crunchpixstudio-49769582/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=384921">Crunchpix Studio</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=384921">Pixabay</a>
+## 3D 모델
 
-Music by <a href="/users/lesfm-22579021/?tab=audio&amp;utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=audio&amp;utm_content=5773">Lesfm</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=5773">Pixabay</a>
+- **캐릭터 모델 & 애니메이션** — [Mixamo](https://www.mixamo.com/) (Adobe 무료 자산)
+- **행성 (FBX)** — [Quaternius의 Poly Pizza 자산](https://poly.pizza/m/B7xd3SZq0z)
+- **운석으로 사용된 행성 (FBX)** — [Quaternius의 Poly Pizza 자산](https://poly.pizza/m/18Uxrb2dIc)
+- **코인 (FBX)** — [Quaternius의 Poly Pizza 자산](https://poly.pizza/m/7IrL01B97W)
 
-Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, modified by me
+## 사운드
 
-Basketball texture: https://opengameart.org/content/basket-ball-texture
+- **효과음** — Crunchpix Studio (Pixabay)
+- **배경음악** — Lesfm (Pixabay)
+
+## 아이콘
+
+- **볼륨/음소거/별 아이콘** — Flaticon의 Pixel perfect, 일부 수정함
+
+## 텍스처
+
+- **농구공 텍스처** — [opengameart.org](https://opengameart.org/content/basket-ball-texture)
+
+각 자산의 라이선스는 원본 출처 페이지를 참고하세요.
